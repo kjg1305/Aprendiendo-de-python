@@ -93,7 +93,7 @@ class Gato(Animal):
 
 # --ENCAPSULAMIENTO EN POO----------------
 
-self.__nombre 
+ #             self.__nombre 
 
 # en python no existe el ecapsulamiento como lo hace en java 
 # en python se puede simular el encapsulamiento usando el doble guion bajo antes del nombre de la variable
