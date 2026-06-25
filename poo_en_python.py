@@ -1,3 +1,9 @@
+#----Self en POO con python---------
+
+# *self* significa este objeto en particular , es como un identificador 
+# de las variables que se relaizan a una clase en especial
+#----------------------------------
+
 #----cosntructores en poo-----------
 
 class Estudiante: 
@@ -33,7 +39,40 @@ class Estudiante:
 
 #-------------------------
 
+#----Metodo __str__ 
+
+# sirve para indicar como se muestra un objeto cuando  se impirme o se coniverte a texto
+#sin __str__ , python no sabe como mostrar un objeto de forma amigable , asi que por defecto
+#imprime la clase del objeto y sdu direccion en la memoria RAM  como :
+
+#<Estudiante object at 0*00123>
+
+#con __str__ , se controla como python imprime o convierte el objeto , el formato y demas como :
+
+#Karen - Ingenieria 
+
+#EJEMPLO COMPLETO 
+
+class Estudiante:
+    def __init__(self,nombre,carrera):
+        self.nombre=nombre
+        self.carrera=carrera
+
+    #aqui se define el comportamiento del objeto al imprimir
+    def __str__ (self):
+        return f"{self.nombre}-{self.carrera}"
+
+#creamos un onjeto para prueba
+alumno=Estudiante("Karen","Ingenieria")
+#Al principio python llama automaticamente a __str__ print(alumno)
+#Resultado = "karen"-"Ingenieria"
+         
+#--------------------------------
+
+
 #----Herencia en poo----------------
+#la forma de reutilizar codigo mas eficiente en poo.
+
 class Persona :
      def __init__(self,nombre):
          self.nombre=nombre;
@@ -54,6 +93,8 @@ class Estudiante(Persona):
 #-------------------------
 
 #----Sobreescritura de metodos en poo------
+
+#para modificar el comportamiento heredado de una clase
 
 def mostrar_info(self):
     print("Nuevo comportamiento");
@@ -93,7 +134,9 @@ class Gato(Animal):
 
 # --ENCAPSULAMIENTO EN POO----------------
 
- #             self.__nombre 
+ #             self.nombre - Publico 
+ #             self._nombre - Protegido
+ #             self.__nombre - privado 
 
 # en python no existe el ecapsulamiento como lo hace en java 
 # en python se puede simular el encapsulamiento usando el doble guion bajo antes del nombre de la variable
