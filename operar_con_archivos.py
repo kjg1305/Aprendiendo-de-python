@@ -5,7 +5,7 @@
 with open ("datos.txt", "w") as archivo:
     archivo.write("Holii")
 """"
-para poder agragar texto en un archivo sin borrar la informacion que 
+##para poder agragar texto en un archivo sin borrar la informacion que 
 ya tiene , se usa el modo "a" en lugar de "w" , esto se conoce como modo
 de apertura de archivos , 
 

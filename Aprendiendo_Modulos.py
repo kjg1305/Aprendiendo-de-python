@@ -11,7 +11,7 @@ corronpa todo el proyecto si no solo un arhivo de este.
 #IMPORTAR TODO DEL MODULO
 
 """
-importar todo un modulo - import + nombre del modulo - import estudiante
+importar todo un modulo - import + nombre del modulo - ejemplo import estudiante
 
 importar una clase - from  nombre modulo import nombre de la clase - from estudiante import Estudiante
 
@@ -33,7 +33,7 @@ esto sirve para que un archivo de python sepa como esta siendo ejecutado
 si se abre diectamente o si se abre desde otro archivo por medio de la importacion
 
 ¿como cambia el valor de __name__?
-esto depende de como se ejecuta ek archivo
+esto depende de como se ejecuta el archivo
 
 caso 1: ejecucion directa 
 si en la terminal se escribe python main.py 
