@@ -145,7 +145,7 @@ datos_consola = {
     "edad":20,
     "curso":"aprendiendo python"
 }
-#se abre o crea un archivo de JSON "progreso.json" en modo escritura "w"
+#se abre o crea un archivo de JSON "progreso.json" en modo escritura "w".
 with open ("progreso.json","w",encoding ="utf-8") as archivo:
     #json.dump toma el dicionario, archivo y indent =4 para que se vea bonito y ordenado.
     json.dump(datos_consola,archivo,indent=4)
